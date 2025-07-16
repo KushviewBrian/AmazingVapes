@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Amazing Vapes – Fort Wayne & NE Indiana's Premier Vape Shop</title>
+  <meta name="description" content="Amazing Vapes: family-owned vape shops in NE Indiana offering premium mods, e-liquids, THCA, CBD, and accessories. 7 locations serving Fort Wayne and New Haven.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="vape shop Fort Wayne, e-cigarettes Indiana, CBD Fort Wayne, THCA products, premium e-liquid, vaping accessories">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #ea580c;
+      --primary-dark: #c2410c;
+      --secondary-color: #f59e0b;
+      --accent-color: #10b981;
+      --text-primary: #111827;
+      --text-secondary: #6b7280;
+      --text-light: #9ca3af;
+      --bg-primary: #ffffff;
+      --bg-secondary: #f9fafb;
+      --bg-tertiary: #f3f4f6;
+      --border-color: #e5e7eb;
+      --border-light: #f3f4f6;
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+      --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+      --gradient-secondary: linear-gradient(135deg, var(--secondary-color) 0%, #ea580c 100%);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #1a1a1a;
+      border-radius: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+      border-radius: 6px;
+      border: 2px solid #1a1a1a;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, #9a3412 100%);
+    }
+
+    /* Selection styling */
+    ::selection {
+      background: var(--primary-color);
+      color: white;
+    }
+
+    ::-moz-selection {
+      background: var(--primary-color);
+      color: white;
+    }
+
+    /* Custom focus states */
+    button:focus,
+    input:focus,
+    a:focus {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--text-primary);
+      background-color: var(--bg-primary);
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .container-wide {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header Styles */
+    .header {
+      background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+      border-bottom: 2px solid var(--primary-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+    }
+
+    .logo-image {
+      height: 80px;
+      width: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .logo-image:hover {
+      box-shadow: 0 6px 20px rgba(234, 88, 12, 0.5);
+    }
+
+    .logo-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav {
+      display: flex;
+      gap: 4px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 8px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(234, 88, 12, 0.2);
+    }
+
+    .nav-link {
+      padding: 12px 20px;
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .nav-link::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(234, 88, 12, 0.2), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .nav-link:hover::before {
+      left: 100%;
+    }
+
+    .nav-link:hover {
+      color: white;
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(234, 88, 12, 0.4);
+    }
+
+    .nav-link.active {
+      color: white;
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+      box-shadow: 0 2px 8px rgba(234, 88, 12, 0.3);
+    }
+
+    /* Custom animations and effects */
+    @keyframes glow {
+      0%, 100% { box-shadow: 0 0 5px var(--primary-color); }
+      50% { box-shadow: 0 0 20px var(--primary-color), 0 0 30px var(--primary-color); }
+    }
+
+    .glow-effect {
+      animation: glow 2s ease-in-out infinite;
+    }
+
+    /* Enhanced button effects */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
+      font-size: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .btn:hover::before {
+      left: 100%;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+      color: white;
+      box-shadow: 0 4px 15px rgba(234, 88, 12, 0.3);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, #9a3412 100%);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(234, 88, 12, 0.5);
+    }
+
+    .btn-secondary {
+      background: #f3f4f6 !important;
+      color: #ea580c !important;
+      border: 2px solid #ea580c !important;
+      font-weight: 600 !important;
+    }
+
+    .btn-secondary:hover {
+      background: #ea580c !important;
+      color: white !important;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(234, 88, 12, 0.4);
+    }
+
+    /* Link hover effects */
+    a:not(.btn):not(.logo):not(.nav-link) {
+      color: var(--primary-color);
+      text-decoration: none;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    a:not(.btn):not(.logo):not(.nav-link):hover {
+      color: var(--primary-dark);
+    }
+
+    a:not(.btn):not(.logo):not(.nav-link)::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+      transition: width 0.3s ease;
+    }
+
+    a:not(.btn):not(.logo):not(.nav-link):hover::after {
+      width: 100%;
+    }
+    .hero {
+      position: relative;
+      background: var(--gradient-primary);
+      color: white;
+      padding: 120px 0 80px;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ffffff" stop-opacity="0.1"/><stop offset="100%" stop-color="%23ffffff" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="100" fill="url(%23a)"/><circle cx="800" cy="300" r="150" fill="url(%23a)"/><circle cx="400" cy="700" r="120" fill="url(%23a)"/></svg>');
+      opacity: 0.5;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero-subtitle {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(48px, 8vw, 72px);
+      font-weight: 700;
+      margin-bottom: 24px;
+      line-height: 1.1;
+    }
+
+    .hero-description {
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-group {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: none;
+      font-size: 16px;
+    }
+
+    .btn-primary {
+      background: white;
+      color: var(--primary-color);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-primary:hover {
+      background: var(--bg-secondary);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    /* Section Styles */
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-alt {
+      background-color: var(--bg-secondary);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .section-subtitle {
+      color: var(--primary-color);
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(36px, 5vw, 48px);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .section-description {
+      font-size: 18px;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Feature Grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+      margin-top: 48px;
+    }
+
+    @media (max-width: 1200px) {
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .feature-card {
+      background: var(--bg-primary);
+      border-radius: 16px;
+      padding: 40px 32px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-light);
+      transition: all 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--border-color);
+    }
+
+    .feature-icon {
+      width: 64px;
+      height: 64px;
+      background: var(--gradient-primary);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      font-size: 28px;
+      color: white;
+    }
+
+    .feature-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+    }
+
+    .feature-description {
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Locations Grid */
+    .locations-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 48px;
+    }
+
+    @media (max-width: 1200px) {
+      .locations-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .locations-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .location-card {
+      background: var(--bg-primary);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-light);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .location-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient-primary);
+    }
+
+    .location-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .location-name {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+    }
+
+    .location-details {
+      space-y: 8px;
+    }
+
+    .location-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .location-detail-icon {
+      width: 20px;
+      height: 20px;
+      color: var(--primary-color);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .location-detail-text {
+      color: var(--text-secondary);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .location-specialty {
+      background: var(--bg-secondary);
+      color: var(--primary-color);
+      font-size: 12px;
+      font-weight: 500;
+      padding: 4px 12px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-top: 12px;
+    }
+
+    /* Product Grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+      margin-top: 48px;
+    }
+
+    .product-card {
+      background: var(--bg-primary);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-light);
+      transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .product-image {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      object-position: center;
+      border-radius: 12px 12px 0 0;
+      background: var(--bg-tertiary);
+      padding: 20px;
+    }
+
+    .product-content {
+      padding: 24px;
+    }
+
+    .product-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+    }
+
+    .product-description {
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .product-highlight {
+      background: var(--bg-secondary);
+      color: var(--primary-color);
+      font-size: 14px;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    /* Alert/Warning Box */
+    .alert {
+      background: #fef3c7;
+      border: 1px solid #f59e0b;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 32px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .alert-icon {
+      color: #f59e0b;
+      font-size: 20px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .alert-content {
+      color: #92400e;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* Newsletter Section */
+    .newsletter {
+      background: var(--gradient-primary);
+      color: white;
+      text-align: center;
+    }
+
+    .newsletter-form {
+      max-width: 500px;
+      margin: 32px auto 0;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .newsletter-input {
+      flex: 1;
+      min-width: 280px;
+      padding: 14px 16px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      font-size: 16px;
+      backdrop-filter: blur(10px);
+    }
+
+    .newsletter-input::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .newsletter-input:focus {
+      outline: none;
+      border-color: rgba(255, 255, 255, 0.5);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--text-primary);
+      color: white;
+      padding: 64px 0 32px;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+
+    .footer-section h4 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .footer-section p,
+    .footer-section a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      margin-bottom: 8px;
+      display: block;
+      transition: color 0.2s ease;
+    }
+
+    .footer-section a:hover {
+      color: var(--secondary-color);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 32px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* Age Verification Modal */
+    .age-verification {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      backdrop-filter: blur(4px);
+    }
+
+    .age-modal {
+      background: white;
+      border-radius: 16px;
+      padding: 48px;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: var(--shadow-xl);
+    }
+
+    .age-modal h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      margin-bottom: 16px;
+      color: var(--text-primary);
+    }
+
+    .age-modal p {
+      color: var(--text-secondary);
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    .age-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .age-buttons .btn {
+      min-width: 180px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container, .container-wide {
+        padding: 0 16px;
+      }
+
+      .header-content {
+        flex-direction: column;
+        gap: 16px;
+        padding: 12px 0;
+      }
+
+      .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero {
+        padding: 80px 0 60px;
+      }
+
+      .section {
+        padding: 60px 0;
+      }
+
+      .cta-group {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+      }
+
+      .newsletter-form {
+        flex-direction: column;
+      }
+
+      .newsletter-input {
+        min-width: 100%;
+      }
+
+      .locations-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .age-modal {
+        margin: 16px;
+        padding: 32px 24px;
+      }
+
+      .age-buttons {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="age-verification" id="ageVerification">
+    <div class="age-modal">
+      <h2>Age Verification Required</h2>
+      <p>You must be 21 years or older to access this website. Our products contain nicotine, which is an addictive chemical.</p>
+      <div class="age-buttons">
+        <button class="btn btn-primary" onclick="acceptAge()">I am 21 or older</button>
+        <button class="btn btn-secondary" onclick="window.location.href='https://www.google.com'">I am under 21</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="logo">
+          <img src="amazing-vapes-logo.png" alt="Amazing Vapes Logo" class="logo-image">
+          <span class="logo-text">Amazing Vapes</span>
+        </a>
+        <nav class="nav">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#locations" class="nav-link">Locations</a>
+          <a href="#products" class="nav-link">Products</a>
+          <a href="#thca" class="nav-link">THCA</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="#hours" class="nav-link">Hours</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-subtitle">Since 2015 • Family Owned & Operated</div>
+        <h1 class="hero-title">Amazing Vapes</h1>
+        <p class="hero-description">Northeast Indiana's premier destination for premium vape products, THCA, CBD, and expert guidance. Seven convenient locations serving our community.</p>
+        <div class="cta-group">
+          <a href="#locations" class="btn btn-primary">Find a Location</a>
+          <a href="#products" class="btn btn-secondary">Shop Products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-subtitle">Why Choose Us</div>
+        <h2 class="section-title">Your Trusted Vaping Partner</h2>
+        <p class="section-description">We're a family-owned business committed to providing exceptional products, expert guidance, and outstanding customer service across Northeast Indiana.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">👨‍👩‍👧‍👦</div>
+          <h3 class="feature-title">Family Owned</h3>
+          <p class="feature-description">Local Fort Wayne family business serving our community with integrity and personal care since 2015.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⭐</div>
+          <h3 class="feature-title">Premium Quality</h3>
+          <p class="feature-description">Authentic products from trusted brands like SMOK, Aspire, Sigelei, and Voopoo. No knockoffs, ever.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎓</div>
+          <h3 class="feature-title">Expert Guidance</h3>
+          <p class="feature-description">Knowledgeable staff ready to help beginners get started and advanced users find their perfect setup.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-subtitle">Our Inventory</div>
+        <h2 class="section-title">Premium Vape Products</h2>
+        <p class="section-description">From beginner-friendly starter kits to advanced setups for enthusiasts, we carry the latest and greatest in vaping technology.</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image">🔧</div>
+          <div class="product-content">
+            <h3 class="product-title">Advanced Mods & Kits</h3>
+            <p class="product-description">Professional-grade devices from Sigelei, SMOK, Voopoo, and GeekVape. Perfect for experienced vapers seeking power and customization.</p>
+            <div class="product-highlight">Popular: Voopoo Drag Series</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">💨</div>
+          <div class="product-content">
+            <h3 class="product-title">Tanks & Atomizers</h3>
+            <p class="product-description">High-performance tanks and RDAs for exceptional flavor and vapor production. From beginner-friendly to competition-level builds.</p>
+            <div class="product-highlight">Featured: FreeMax Mesh Pro</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">📱</div>
+          <div class="product-content">
+            <h3 class="product-title">Pod Systems</h3>
+            <p class="product-description">Convenient, portable pod systems perfect for on-the-go vaping. Easy to use and maintain with great flavor delivery.</p>
+            <div class="product-highlight">Trending: SMOK Nord Series</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">🧪</div>
+          <div class="product-content">
+            <h3 class="product-title">Premium E-Liquids</h3>
+            <p class="product-description">Extensive selection of premium e-juices including local favorite Hoosier Vapes. Available in various nicotine strengths.</p>
+            <div class="product-highlight">0mg-50mg Available</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">🌿</div>
+          <div class="product-content">
+            <h3 class="product-title">CBD Products</h3>
+            <p class="product-description">High-quality CBD oils, tinctures, topicals, and pet products from trusted brands like Koi CBD.</p>
+            <div class="product-highlight">Lab-Tested & Certified</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">🔋</div>
+          <div class="product-content">
+            <h3 class="product-title">Accessories & Parts</h3>
+            <p class="product-description">Everything you need to maintain your devices: batteries, chargers, coils, cotton, and replacement parts.</p>
+            <div class="product-highlight">Same-Day Availability</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="thca">
+    <div class="container">
+      <!-- Hero-style Amazing Hemp Logo -->
+      <div style="text-align: center; margin-bottom: 80px; padding: 80px 0; background: linear-gradient(135deg, rgba(234, 88, 12, 0.1) 0%, rgba(249, 158, 11, 0.05) 100%); border-radius: 24px; position: relative; overflow: hidden;">
+        <img src="amazing-hemp-logo.png" alt="Amazing Hemp Logo" style="height: 300px; width: auto; filter: drop-shadow(0 20px 60px rgba(234, 88, 12, 0.5)); transition: all 0.5s ease; position: relative; z-index: 2;" onmouseover="this.style.transform='scale(1.05)'; this.style.filter='drop-shadow(0 30px 80px rgba(234, 88, 12, 0.7))'" onmouseout="this.style.transform='scale(1)'; this.style.filter='drop-shadow(0 20px 60px rgba(234, 88, 12, 0.5))'" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <div style="display: none; font-size: 120px; color: var(--primary-color); text-align: center; font-weight: bold; text-shadow: 0 8px 30px rgba(234, 88, 12, 0.5); position: relative; z-index: 2;">🌿 AMAZING HEMP 🌿</div>
+      </div>
+      
+      <div class="section-header">
+        <div class="section-subtitle">Premium Hemp</div>
+        <h2 class="section-title">🌿 Premium THCA Products</h2>
+        <p class="section-description">Federally compliant THCA products under the 2018 Farm Bill. Lab-tested for quality and potency.</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <img class="product-image" src="bag.png" alt="THCa Hemp Flower">
+          <div class="product-content">
+            <h3 class="product-title">THCA Flower</h3>
+            <p class="product-description">Premium flower with exceptional quality. Popular strains include Ice Cream Cake, Gelato 41, and Gorilla Glue #4.</p>
+            <div class="product-highlight">22-30% THCA Content</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img class="product-image" src="roll.png" alt="THCa Prerolls">
+          <div class="product-content">
+            <h3 class="product-title">THCA Pre-Rolls</h3>
+            <p class="product-description">Expertly rolled pre-rolls available in single and multi-packs. Convenient and ready to enjoy.</p>
+            <div class="product-highlight">Indica, Sativa & Hybrid</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img class="product-image" src="jar.png" alt="And More!">
+          <div class="product-content">
+            <h3 class="product-title">THCA Concentrates & More</h3>
+            <p class="product-description">High-purity Diamonds, Crumble, and Gummies!</p>
+            <div class="product-highlight">80%+ THCA Purity</div>
+          </div>
+        </div>
+      </div>
+      <div class="alert">
+        <div class="alert-icon">⚠️</div>
+        <div class="alert-content">
+          <strong>Important:</strong> Must be 21+ to purchase. Valid ID required. THCA products contain &lt;0.3% delta-9 THC as required by federal law. Products have not been evaluated by the FDA and are not intended to diagnose, treat, cure, or prevent any disease.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-subtitle">Customer Care</div>
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-description">Beyond just selling products, we're here to support your vaping journey with expert services and guidance.</p>
+      </div>
+      <div class="features-grid"></div>
+        <div class="feature-card">
+          <div class="feature-icon">🛠️</div>
+          <h3 class="feature-title">Device Setup & Support</h3>
+          <p class="feature-description">Professional device configuration and ongoing support to help you get the most from your equipment.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎓</div>
+          <h3 class="feature-title">Beginner Education</h3>
+          <p class="feature-description">Comprehensive education on device safety, maintenance, and best practices for new vapers.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎖️</div>
+          <h3 class="feature-title">Military Discount</h3>
+          <p class="feature-description">Special pricing for active military and veterans as our way of saying thank you for your service.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="locations">
+    <div class="container-wide">
+      <div class="section-header">
+        <div class="section-subtitle">Find Us</div>
+        <h2 class="section-title">Our Locations</h2>
+        <p class="section-description">Seven convenient locations serving Northeast Indiana with consistent quality and service.</p>
+      </div>
+      <div class="locations-grid">
+        <div class="location-card">
+          <h3 class="location-name">W Jefferson Blvd</h3>
+          <div class="location-details">
+            <div class="location-detail">
+              <div class="location-detail-icon">📍</div>
+              <div class="location-detail-text">5950 W Jefferson Blvd<br>Fort Wayne, IN 46804</div>
+            </div>
+            <div class="location-detail">
+              <div class="location-detail-icon">📞</div>
+              <div class="location-detail-text">(260) 444-4787</div>
+            </div>
+          </div>
+          <div class="location-specialty">Flagship Store • Largest Selection</div>
+        </div>
+        <div class="location-card">
+          <h3 class="location-name">Maplecrest Rd</h3>
+          <div class="location-details">
+            <div class="location-detail">
+              <div class="location-detail-icon">📍</div>
+              <div class="location-detail-text">2614 Maplecrest Rd<br>Fort Wayne, IN 46815</div>
+            </div>
+            <div class="location-detail">
+              <div class="location-detail-icon">📞</div>
+              <div class="location-detail-text">(260) 245-6194</div>
+            </div>
+          </div>
+          <div class="location-specialty">CBD & THCA Specialists</div>
+        </div>
+        <div class="location-card">
+          <h3 class="location-name">N Anthony Blvd</h3>
+          <div class="location-details">
+            <div class="location-detail">
+              <div class="location-detail-icon">📍</div>
+              <div class="location-detail-text">3322 N Anthony Blvd<br>Fort Wayne, IN 46805</div>
+            </div>
+            <div class="location-detail">
+              <div class="location-detail-icon">📞</div>
+              <div class="location-detail-text">(260) 444-2396</div>
+            </div>
+          </div>
+          <div class="location-specialty">Beginner Friendly</div>
+        </div>
+        <div class="location-card">
+          <h3 class="location-name">Leo Rd</h3>
+          <div class="location-details">
+            <div class="location-detail">
+              <div class="location-detail-icon">📍</div>
+              <div class="location-detail-text">10372 Leo Rd<br>Fort Wayne, IN 46825</div>
+            </div>
+            <div class="location-detail">
+              <div class="location-detail-icon">📞</div>
+              <div class="location-detail-text">Call for details</div>
+            </div>
+          </div>
+          <div class="location-specialty">Full Product Range</div>
+        </div>
+        <div class="location-card">
+          <h3 class="location-name">Lima Rd</h3>
+          <div class="location-details">
+            <div class="location-detail">
+              <div class="location-detail-icon">📍</div>
+              <div class="location-detail-text">9187 Lima Rd<br>Fort Wayne, IN 46818</div>
+            </div>
+            <div class="location-detail">
+              <div class="location-detail-icon">📞</div>
+              <div class="location-detail-text">Call for details</div>
+            </div>
+          </div>
+          <div class="location-specialty">Full Product Range</div>
+        </div>
+        <div class="location-card">
+          <h3 class="location-name">Bluffton Rd</h3>
+          <div class="location-details">
+            <div class="location-detail">
+              <div class="location-detail-icon">📍</div>
+              <div class="location-detail-text">6437 Bluffton Rd<br>Fort Wayne, IN 46809</div>
+            </div>
+            <div class="location-detail">
+              <div class="location-detail-icon">📞</div>
+              <div class="location-detail-text">Call for details</div>
+            </div>
+          </div>
+          <div class="location-specialty">Full Product Range</div>
+        </div>
+        <div class="location-card">
+          <h3 class="location-name">New Haven</h3>
+          <div class="location-details">
+            <div class="location-detail">
+              <div class="location-detail-icon">📍</div>
+              <div class="location-detail-text">440 Lincoln Hwy W<br>New Haven, IN 46774</div>
+            </div>
+            <div class="location-detail">
+              <div class="location-detail-icon">📞</div>
+              <div class="location-detail-text">(260) 245-0210</div>
+            </div>
+          </div>
+          <div class="location-specialty">Convenient Location</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="hours">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-subtitle">Visit Us</div>
+        <h2 class="section-title">Store Hours & Contact</h2>
+      </div>
+      <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+        <div class="feature-card" style="display: inline-block; margin-bottom: 32px;">
+          <h3 style="color: var(--primary-color); margin-bottom: 16px;">Store Hours (Most Locations)</h3>
+          <div style="text-align: left; color: var(--text-secondary);">
+            <p><strong>Monday–Friday:</strong> 11:00 AM – 8:00 PM</p>
+            <p><strong>Saturday:</strong> 10:00 AM – 5:00 PM</p>
+            <p><strong>Sunday:</strong> 12:00 PM – 4:00 PM</p>
+          </div>
+          <p style="margin-top: 16px; font-style: italic; color: var(--text-light);">
+            Hours may vary by location. Please call ahead to confirm.
+          </p>
+        </div>
+        <p style="font-size: 18px; color: var(--text-secondary); margin-bottom: 16px;">
+          <strong>Need product recommendations?</strong><br>
+          Call your nearest location for personalized guidance and current inventory.
+        </p>
+        <div class="product-highlight" style="font-size: 16px;">
+          🎖️ Military Discount Available – Thank you for your service!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section newsletter" id="newsletter">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" style="color: white;">Stay Connected</h2>
+        <p class="section-description" style="color: rgba(255, 255, 255, 0.9);">
+          Be the first to know about new products, THCA drops, exclusive deals, and special events at Amazing Vapes.
+        </p>
+      </div>
+      <form class="newsletter-form" action="#" method="POST">
+        <input type="email" name="email" placeholder="Enter your email address" required class="newsletter-input">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Amazing Vapes</h4>
+          <p>Northeast Indiana's premier vape destination since 2015</p>
+          <p>Family owned and operated with 7 convenient locations</p>
+          <p>Committed to quality products and exceptional service</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <a href="#locations">Store Locations</a>
+          <a href="#products">Vape Products</a>
+          <a href="#thca">THCA Products</a>
+          <a href="#services">Our Services</a>
+          <a href="#contact">Contact & Hours</a>
+        </div>
+        <div class="footer-section">
+          <h4>Customer Care</h4>
+          <p>Device Setup & Support</p>
+          <p>Product Education</p>
+          <p>Beginner Guidance</p>
+        </div>
+        <div class="footer-section">
+          <h4>Legal & Safety</h4>
+          <p>Age Verification Required (21+)</p>
+          <p>Indiana Licensed Retailer</p>
+          <p>Lab-Tested Products</p>
+          <p>Responsible Vaping Advocacy</p>
+          <p>Compliance with State Laws</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Amazing Vapes. All rights reserved.</p>
+        <p><strong>WARNING:</strong> Vaping products contain nicotine, an addictive chemical. Not for sale to minors.</p>
+        <p><strong>Indiana Law:</strong> Must be 21+ to purchase nicotine or hemp products. Valid photo ID required.</p>
+        <p>THCA products have not been evaluated by the FDA. Not for use by pregnant or nursing women.</p>
+        <p>Licensed tobacco retailer - Indiana Alcohol & Tobacco Commission</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function acceptAge() {
+      document.getElementById('ageVerification').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+    
+    // Initially prevent scrolling
+    document.body.style.overflow = 'hidden';
+    
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Header scroll effect with enhanced styling
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('.header');
+      if (window.scrollY > 100) {
+        header.style.background = 'linear-gradient(135deg, #000000 0%, #0f0f0f 100%)';
+        header.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.6)';
+        header.style.borderBottom = '2px solid var(--primary-color)';
+      } else {
+        header.style.background = 'linear-gradient(135deg, #000000 0%, #1a1a1a 100%)';
+        header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
+        header.style.borderBottom = '2px solid var(--primary-color)';
+      }
+    });
+
+    // Enhanced active navigation highlighting
+    window.addEventListener('scroll', function() {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-link');
+      
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Add glow effect to key elements on scroll
+    window.addEventListener('scroll', function() {
+      const scrolled = window.scrollY;
+      const rate = scrolled * -0.5;
+      
+      // Add parallax and glow effects to hero section
+      const hero = document.querySelector('.hero');
+      if (hero && scrolled < hero.offsetHeight) {
+        hero.style.transform = `translateY(${rate}px)`;
+      }
+    });
+
+    // Enhanced smooth scroll with easing
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const headerHeight = document.querySelector('.header').offsetHeight;
+          const targetPosition = target.offsetTop - headerHeight - 20;
+          
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Add intersection observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe elements for scroll animations
+    document.querySelectorAll('.feature-card, .location-card, .product-card').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'all 0.6s ease';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
